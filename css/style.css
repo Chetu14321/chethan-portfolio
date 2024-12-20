@@ -54,7 +54,8 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 999;
+    unicode-bidi: isolate;
 }
 .navbar{
     background-color: var(--light);
@@ -333,7 +334,7 @@ td,th{
     border-radius: 50%;
     background-color: var(--danger);
 }
-.skills-tutle{
+.skills-title{
     text-align: center;
 
 }
@@ -372,7 +373,8 @@ td,th{
 
 .project-title h5,
 .skills-title h5 ,
-.contact-title h5 {
+.contact-title h5,
+.about-title h5 {
     color: var(--dark-gray);
     letter-spacing: 3px;
     font-size: 1.2rem;
