@@ -5,7 +5,10 @@
     .btn-toggler{
         display: block;
     }
-    /* .nav{position: relative; */
+    .nav{position: relative;
+    }
+    #home-block{
+        top: 2.3rem;
     }
     .menu.active{
         display: flex;
