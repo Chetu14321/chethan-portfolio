@@ -1,4 +1,4 @@
-@media screen  and (width:430px) and (height:932px) {
+@media screen  and (max-width:600px){
     .menu{
         display: none;
     }
