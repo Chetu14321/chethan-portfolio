@@ -1,11 +1,11 @@
-@media screen  and (max-width:600px){
+@media screen  and (max-width:505px){
     .menu{
         display: none;
     }
     .btn-toggler{
         display: block;
     }
-    .nav{position: relative;
+    /* .nav{position: relative; */
     }
     .menu.active{
         display: flex;
@@ -14,7 +14,7 @@
         justify-content: center;
         position: absolute;
         left: 50%;
-        top: 2.8rem;
+        top: 4rem;
         background-color: var(--gray);
         box-shadow: var(--shadow);
         width: 100%;
