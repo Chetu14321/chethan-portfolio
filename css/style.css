@@ -125,7 +125,7 @@ header{
 #home-block {
     width: 100%;
     height: 100vh;
-    padding: top 5rem; 
+    padding-top: 2rem;
 }
 .home-container{
     width: 100%;
@@ -287,7 +287,7 @@ border:2px solid black;
 td,th{
     border: 1px solid var(--gray);
     border-collapse: collapse;
-    padding: 20px;
+    padding: 30px;
 
 }
 .td,th{
@@ -300,7 +300,7 @@ td,th{
 
 #skills{
     padding-bottom: 4rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
     width: 100%;
     background-color: var(--gray);
 }
@@ -323,7 +323,7 @@ td,th{
 }
 
 .skills-card .card{
-    background-color: var(--primary);
+    background-color: var(--light);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -349,6 +349,7 @@ td,th{
 }
 .skills-title{
     text-align: center;
+    
 
 }
 .skills-container .skills-title h2{
@@ -356,7 +357,7 @@ td,th{
     color: var(--danger);
 }
 .skills-card .card-title{
-    color: var(--dark);
+    color: var(--dark-gray);
 }
 
 
@@ -410,8 +411,19 @@ td,th{
 .project-card .card .card-front{
     position: relative;
 }
+
+.card-front img{
+    width: 350px;
+    height: 250px;
+    object-fit:fill;
+    transition: transform 3 s;
+    /* transform: rotateY(360deg); */
+    background-color: #0ab0ff;
+    border: 2px solid #0ab0ff;;
+}
 .project-card .card .card-back{
 position: relative;
+/* content:attr(welcome); */
 }
 .project-card .card .card-back{
     position: absolute;
@@ -446,6 +458,14 @@ position: relative;
 .card-back .data h1{
     color: var(--warning);
 }
+.card-back .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+}
+
 .card-back .data .git{
     /* border: 3px solid yellow; */
     border-collapse: collapse;
