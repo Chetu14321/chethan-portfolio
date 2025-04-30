@@ -55,7 +55,9 @@
     height:100vh;
     gap:2rem;
 }
-
+.home-container .col{
+    top: 20px;
+}
 
 
 
