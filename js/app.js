@@ -40,3 +40,7 @@ Array.from(cirProgress).forEach(item => {
 // to display current year///
 
 document.querySelector(".yr").innerText = new Date().getFullYear();
+
+
+
+//
