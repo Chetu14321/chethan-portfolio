@@ -1,8 +1,27 @@
-let menu= document.querySelector(".menu")
-let togBtn= document.querySelector("#toggler")
-togBtn.addEventListener("click",function() {
+
+  const toggler = document.getElementById("toggler");
+  const menu = document.querySelector(".menu");
+  const menuLinks = document.querySelectorAll(".menu-link");
+
+  // Toggle open/close
+  toggler.addEventListener("click", () => {
     menu.classList.toggle("active");
-});
+
+    // Change icon
+    toggler.innerHTML = menu.classList.contains("active")
+      ? '<i class="fa-solid fa-xmark"></i>'
+      : '<i class="fa-solid fa-bars"></i>';
+  });
+
+  // Close menu automatically when a link is clicked
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+      toggler.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+  });
+
+
 
 
 
