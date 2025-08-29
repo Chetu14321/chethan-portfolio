@@ -133,6 +133,7 @@ header{
 
 }
 .row{
+    top: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -613,4 +614,51 @@ form .success{
 .foot{
     width: 100%;
     text-align: center;
+}
+/* Reveal animation base */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+/* When visible */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variants */
+.reveal.fade-in {
+  transform: none;
+}
+
+.reveal.slide-up {
+  transform: translateY(60px);
+}
+
+.reveal.slide-left {
+  transform: translateX(-60px);
+}
+
+.reveal.slide-right {
+  transform: translateX(60px);
+}
+
+.reveal.zoom-in {
+  transform: scale(0.85);
+}
+
+.reveal.active.zoom-in {
+  transform: scale(1);
+}
+
+.reveal.fade-zoom {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.reveal.active.fade-zoom {
+  transform: scale(1);
+  opacity: 1;
 }
